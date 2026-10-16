@@ -19,7 +19,7 @@ carries the owl.
 1. **Source is public** — this repository, with upstream history intact.
 2. **Reproducible:** `npm install && npx tauri build` (Rust + Node; see upstream docs).
 3. **SHA-256 of the official installer** (also in `SHA256SUMS.txt` with every release):
-   `d961b23871b70dd5643a3ddb8babad10a1c7fd8ee30b89dcfa1100972f253114`
+   `e7d04e85355521ca27cbaf105f06e925390973f4c8021fc655a4707c2f82baf4`
 4. **No code-signing certificate (free project, no budget):** Windows SmartScreen may
    show "unknown publisher" on first run — click *More info → Run anyway*. This is a
    property of unsigned open-source builds, not malware. Scan the hash on VirusTotal —
