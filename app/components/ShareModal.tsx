@@ -64,11 +64,11 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, song })
 
   // Platform-specific share text for better engagement
   const defaultShareText = `🎵 "${song.title}" ${song.style ? `(${song.style})` : ''} - Made with Merlin Studio`;
-  const twitterText = `🔥 Just created "${song.title}" with Merlin Studio! ${song.style ? `#${song.style.replace(/\s+/g, '')}` : ''} #AIMusic #YuE2`;
+  const twitterText = `🔥 Just created "${song.title}" with Merlin Studio! ${song.style ? `#${song.style.replace(/\s+/g, '')}` : ''} #AIMusic #MerlinStudio #DigitalEmbassy`;
   const redditTitle = `[AI Music] ${song.title} - ${song.style || 'Original'} | Created with Merlin Studio`;
   const whatsAppText = `🎧 Listen to this AI-generated song!\n\n"${song.title}" by ${song.creator || 'Unknown Artist'}\n${song.style ? `Genre: ${song.style}` : ''}\n\nMade with Merlin Studio.`;
   const telegramText = `🎵 "${song.title}" by ${song.creator || 'Unknown Artist'}\n${song.style ? `🎸 ${song.style}` : ''}\n\n🤖 Made with Merlin Studio`;
-  const linkedInText = `Check out this AI-generated music: "${song.title}" - Created with Merlin Studio. #AIMusic #MusicTech #OpenSource`;
+  const linkedInText = `Check out this AI-generated music: "${song.title}" - Created with Merlin Studio. #AIMusic #MusicTech #OpenSource #DigitalEmbassy`;
 
   const handleShareX = () => {
     const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(twitterText)}&url=${encodeURIComponent(shareUrl)}`;

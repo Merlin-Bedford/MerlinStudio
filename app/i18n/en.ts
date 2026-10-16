@@ -288,7 +288,7 @@ export const en = {
     winampLeave: "Back to the studio",
     studioFamily: "The studio family",
     studioFamilyLine: "Three local music studios on one core, each on its own model: the same interface, the same agent tools, and what each model does best.",
-    studioYue2: "Full songs with an editable score, YuE2",
+    studioYue2: "Full songs with an editable score \u2014 this studio, by The Merlin Trust",
     studioMiniMax: "Full-length tracks from MiniMax Music 3",
     studioAce: "Suno at home: ACE-Step 1.5 with LoRA, covers and remixes",
     studioThis: "this one",

@@ -1,6 +1,6 @@
 /** Names of timoncool's programs by the id they register with (studio-hub-client CONTRACT.md), for "taken from ...". */
 export const PROGRAM_NAMES: Record<string, string> = {
-  yue2: 'YuE2 Studio',
+  yue2: 'Merlin Studio',
   minimax: 'MiniMax Music3 Studio',
   ace: 'ACE-Step Studio',
   dub: 'Dub Studio',

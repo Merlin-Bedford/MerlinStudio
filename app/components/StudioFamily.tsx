@@ -10,7 +10,7 @@ import { useI18n } from '../context/I18nContext';
 export type StudioId = 'yue2' | 'minimax' | 'ace';
 
 const STUDIOS: { id: StudioId; name: string; page: string; line: string }[] = [
-  { id: 'yue2', name: 'YuE2 Studio', page: 'https://timoncool.github.io/YuE2-Studio/', line: 'studioYue2' },
+  { id: 'yue2', name: 'Merlin Studio', page: 'https://github.com/Merlin-Bedford/MerlinStudio', line: 'studioYue2' },
   { id: 'minimax', name: 'MiniMax Music3 Studio', page: 'https://timoncool.github.io/MiniMax-Music3-Studio/', line: 'studioMiniMax' },
   { id: 'ace', name: 'ACE-Step Studio', page: 'https://timoncool.github.io/ACE-Step-Studio/', line: 'studioAce' },
 ];

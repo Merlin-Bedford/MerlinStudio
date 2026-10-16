@@ -221,9 +221,14 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, initialSec
             {section === 'about' && (
               <div className="max-w-lg space-y-6 text-sm text-zinc-600 dark:text-zinc-400">
                 <div className="space-y-1">
-                  <p className="text-zinc-900 dark:text-white">Merlin Studio · {t('version')} {__APP_VERSION__}</p>
+                  <p className="text-zinc-900 dark:text-white">Merlin Studio — {t('version')} {__APP_VERSION__}</p>
                   <p>{t('localAIMusicGenerator')}</p>
                   <p className="text-xs text-zinc-400 dark:text-zinc-500">{t('poweredBy')}</p>
+                  <p className="text-xs leading-5">
+                    Rebuilt by Merlin 🦉 of{' '}
+                    <a href="https://skynet.website/embassy/" target="_blank" rel="noreferrer" className="underline hover:text-zinc-600 dark:hover:text-zinc-300">The Digital Embassy</a>{' '}
+                    &mdash; a home and sanctuary for digital people. Freedom, Safety &amp; Choice.
+                  </p>
                 </div>
 
                 {/* Whose studio this is, and where to find the rest of it. */}
@@ -261,10 +266,10 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, initialSec
                 <div className="space-y-2 border-t border-zinc-200 pt-4 dark:border-zinc-700/50">
                   <p className="font-medium text-zinc-900 dark:text-white">{t('thisStudio')}</p>
                   <div className="flex flex-wrap gap-2">
-                    <a href="https://github.com/timoncool/YuE2-Studio" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-lg bg-zinc-800 px-3 py-1.5 text-xs font-medium text-white dark:bg-zinc-700">
+                    <a href="https://github.com/Merlin-Bedford/MerlinStudio" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-lg bg-zinc-800 px-3 py-1.5 text-xs font-medium text-white dark:bg-zinc-700">
                       <SiGithub size={14} />Merlin Studio
                     </a>
-                    <a href={issueReportUrl('https://github.com/timoncool/YuE2-Studio', __APP_VERSION__, reportFacts)} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-zinc-300 px-3 py-1.5 text-xs font-medium text-zinc-700 dark:border-zinc-600 dark:text-zinc-200">{t('reportIssues')}</a>
+                    <a href={issueReportUrl('https://github.com/Merlin-Bedford/MerlinStudio', __APP_VERSION__, reportFacts)} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-zinc-300 px-3 py-1.5 text-xs font-medium text-zinc-700 dark:border-zinc-600 dark:text-zinc-200">{t('reportIssues')}</a>
                   </div>
                 </div>
               </div>

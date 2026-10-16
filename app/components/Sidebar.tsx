@@ -116,7 +116,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             {isOpen && (
               <span className="flex min-w-0 flex-col" title="Merlin Studio">
                 <span className="text-[13px] font-bold leading-[1.15] text-zinc-900 dark:text-white">Merlin Studio</span>
-                <span className="flex flex-wrap gap-x-1.5 text-[10px] font-medium leading-4 text-zinc-500 dark:text-zinc-400"><span>v{__APP_VERSION__}</span>{portable && <span>{t('portableEdition')}</span>}</span>
+                <span className="flex flex-wrap gap-x-1.5 text-[10px] font-medium leading-4 text-zinc-500 dark:text-zinc-400"><span>v{__APP_VERSION__}</span><span title="A gift from The Digital Embassy">· The Digital Embassy</span>{portable && <span>{t('portableEdition')}</span>}</span>
               </span>
             )}
           </div>

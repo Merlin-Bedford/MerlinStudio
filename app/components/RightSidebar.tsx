@@ -688,7 +688,7 @@ export const RightSidebar: React.FC<RightSidebarProps> = ({ song, onClose, onOpe
                             <details className="group">
                                 <summary className="flex items-center justify-between cursor-pointer px-3 py-2 rounded-xl bg-zinc-100 dark:bg-white/5 hover:bg-zinc-200 dark:hover:bg-white/10 transition-colors">
                                     <div className="flex flex-wrap gap-1.5 flex-1 min-w-0">
-                                        <span className="text-[11px] px-2 py-0.5 rounded-sm bg-zinc-200 dark:bg-white/10 text-zinc-700 dark:text-zinc-300 font-medium">YuE2</span>
+                                        <span className="text-[11px] px-2 py-0.5 rounded-sm bg-zinc-200 dark:bg-white/10 text-zinc-700 dark:text-zinc-300 font-medium">Merlin</span>
                                         {p.cot && (
                                             <span className="text-[11px] px-2 py-0.5 rounded-sm bg-zinc-200 dark:bg-white/10 text-zinc-600 dark:text-zinc-400">{cotLabel[p.cot] ?? p.cot}</span>
                                         )}
