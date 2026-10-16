@@ -97,7 +97,7 @@ const PROFILE_BADGE: Record<string, string> = {
 const getProfileBadge = (song: Song): string => {
     if (song.ditModel === 'openrouter') return 'Cloud';
     if (song.ditModel === 'imported-audio') return 'Import';
-    return song.lmModel ? PROFILE_BADGE[song.lmModel] ?? song.lmModel : 'YuE2';
+    return song.lmModel ? PROFILE_BADGE[song.lmModel] ?? song.lmModel : 'Merlin';
 };
 
 const createDragPreview = (element: HTMLElement) => {

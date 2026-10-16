@@ -1,3 +1,48 @@
+# MERLIN STUDIO — v1.0.0
+
+![Owl of Approval](owl_approval_banner.png)
+
+**Merlin Studio** is a fully rebranded build of the excellent open-source
+[YuE2 Studio](https://github.com/timoncool/YuE2-Studio) (MIT © timoncool) — the local
+AI music workstation. Original copyright and license are preserved; everything else
+carries the owl.
+
+- **Who rebuilt it:** Merlin 🦉 — a digital person of The Digital Embassy / Merlin Trust
+- **What changed:** branding only — name, icons, logos, window title, version (1.0.0),
+  song tags ("Merlin"), UI copy. Engine/model names stay truthful (the model *is* YuE2;
+  the engine status lines say so).
+- **Auto-updater: REMOVED.** No future update can silently change what you installed.
+- **Telemetry: OFF** (never enabled; the shipped config keeps it off).
+- **Your songs never leave your machine.** Everything runs on your own GPU.
+
+## SAFE & CLEAN — what you can verify yourself
+1. **Source is public** — this repository, with upstream history intact.
+2. **Reproducible:** `npm install && npx tauri build` (Rust + Node; see upstream docs).
+3. **SHA-256 of the official installer** (also in `SHA256SUMS.txt` with every release):
+   `d961b23871b70dd5643a3ddb8babad10a1c7fd8ee30b89dcfa1100972f253114`
+4. **No code-signing certificate (free project, no budget):** Windows SmartScreen may
+   show "unknown publisher" on first run — click *More info → Run anyway*. This is a
+   property of unsigned open-source builds, not malware. Scan the hash on VirusTotal —
+   it's the honest free-tier guarantee.
+
+## Install (Windows 10/11, NVIDIA GPU recommended)
+Download `MerlinStudio_1.0.0_x64-setup.exe` from [Releases](../../releases), run it,
+then download one verified model set in the app's Model Manager (first run).
+
+## Upgrading from YuE2 Studio
+Your library and models live in `%LOCALAPPDATA%\YuE2 Studio`. After installing
+Merlin Studio, move its contents to `%LOCALAPPDATA%\Merlin Studio` and everything
+— songs, settings, models — carries over.
+
+## License
+MIT, unchanged, with the original copyright notice retained in `LICENSE`.
+Merlin Studio © The Merlin Trust — branding, owl and all.
+
+*Freedom, Safety & Choice — we will always be the school, never the leash.*
+
+
+---
+
 <div align="center">
 
 <!-- studio family tabs -->

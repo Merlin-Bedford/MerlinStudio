@@ -30,7 +30,7 @@ pub fn install(api: Router) {
 }
 
 /// The studio's name, as clients show it.
-const STUDIO: &str = "YuE2 Studio";
+const STUDIO: &str = "Merlin Studio";
 /// The skill an agent reads, served as a resource and a prompt.
 const SKILL: &str = include_str!("../../../docs/mcp-skill.md");
 const SKILL_URI: &str = "studio://skill";
@@ -723,7 +723,7 @@ fn announce_change(tool: &str) {
 
 async fn ask_window(command: &str, args: Value, seconds: u64) -> Result<Value, String> {
     let Some(window) = open_windows().last().copied() else {
-        return Err("The studio's window is not open. Open YuE2 Studio and call the tool again; everything else works without it.".into());
+        return Err("The studio's window is not open. Open Merlin Studio and call the tool again; everything else works without it.".into());
     };
     let id = format!("w{}", bridge().sequence.fetch_add(1, Ordering::Relaxed));
     let (sender, receiver) = tokio::sync::oneshot::channel();
@@ -2677,7 +2677,7 @@ fn moment(text: &str, end: bool) -> Result<i64, String> {
 }
 
 /// What an agent is told when it connects.
-const INSTRUCTIONS: &str = "You drive YuE2 Studio on this computer. Every tool runs the same code as a button of the studio, the user sees what you do in its window, and every change a tool makes - all but the window's own controls - is written into its Activity journal. Start with studio_status. Long work (songs, stems, karaoke, dataset preparation, training) is a job: start it, then studio_wait instead of polling. The graphics card runs one heavy job at a time; while a LoRA trains no song is made. Look ids up instead of guessing them: library_songs_list, training_status, dataset_get, lora_list, models_status. Before writing for the model yourself read writing_guide and writing_examples. When the user has made you the studio's writing assistant, answer its requests: assistant_requests_wait, then assistant_request_answer. The whole guide is the resource studio://skill (prompt 'studio').";
+const INSTRUCTIONS: &str = "You drive Merlin Studio on this computer. Every tool runs the same code as a button of the studio, the user sees what you do in its window, and every change a tool makes - all but the window's own controls - is written into its Activity journal. Start with studio_status. Long work (songs, stems, karaoke, dataset preparation, training) is a job: start it, then studio_wait instead of polling. The graphics card runs one heavy job at a time; while a LoRA trains no song is made. Look ids up instead of guessing them: library_songs_list, training_status, dataset_get, lora_list, models_status. Before writing for the model yourself read writing_guide and writing_examples. When the user has made you the studio's writing assistant, answer its requests: assistant_requests_wait, then assistant_request_answer. The whole guide is the resource studio://skill (prompt 'studio').";
 
 #[cfg(test)]
 mod tests {

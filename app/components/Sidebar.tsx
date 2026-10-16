@@ -108,14 +108,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <div className="mb-6 flex min-w-0 items-center justify-between gap-2 px-3">
           <div className="flex min-w-0 items-center gap-3">
             {/* The studio mark: the application icon. */}
-            <button type="button" className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[11px] shadow-lg transition-transform hover:scale-105" onClick={() => onNavigate('create')} title="YuE2 Studio">
+            <button type="button" className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[11px] shadow-lg transition-transform hover:scale-105" onClick={() => onNavigate('create')} title="Merlin Studio">
               {/* The application's own icon, so the window and the taskbar
                   show the same mark. */}
               <img src="/brand/yue2.png" alt="" className="h-10 w-10 rounded-[11px]" />
             </button>
             {isOpen && (
-              <span className="flex min-w-0 flex-col" title="YuE2 Studio">
-                <span className="text-[13px] font-bold leading-[1.15] text-zinc-900 dark:text-white">YuE2 Studio</span>
+              <span className="flex min-w-0 flex-col" title="Merlin Studio">
+                <span className="text-[13px] font-bold leading-[1.15] text-zinc-900 dark:text-white">Merlin Studio</span>
                 <span className="flex flex-wrap gap-x-1.5 text-[10px] font-medium leading-4 text-zinc-500 dark:text-zinc-400"><span>v{__APP_VERSION__}</span>{portable && <span>{t('portableEdition')}</span>}</span>
               </span>
             )}

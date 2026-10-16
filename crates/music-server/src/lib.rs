@@ -3489,7 +3489,7 @@ async fn tag_stored_song(state: &AppState, song_id: &str) {
     let text = |value: &str| Some(value.trim().to_string()).filter(|value| !value.is_empty());
     let tags = tagging::TrackTags {
         title: song.title.clone(),
-        album: "YuE2 Studio".to_string(),
+        album: "Merlin Studio".to_string(),
         // The engine is the performer here; the studio is the label.
         artist: "YuE2".to_string(),
         genre: tagging::genre_from_caption(&song.caption),
@@ -4433,7 +4433,7 @@ fn engine_bundle_root() -> PathBuf {
             let in_bundle = beside.ancestors().nth(3).map(|contents| contents.join("Resources").join("resources").join("yue2-cpp"));
             // A Linux package puts the executable in usr/bin and the resources
             // in usr/lib/<product name>, the AppImage under its own usr.
-            let in_package = beside.ancestors().nth(3).map(|usr| usr.join("lib").join("YuE2 Studio").join("resources").join("yue2-cpp"));
+            let in_package = beside.ancestors().nth(3).map(|usr| usr.join("lib").join("Merlin Studio").join("resources").join("yue2-cpp"));
             match (in_bundle, in_package) {
                 (Some(path), _) if cfg!(target_os = "macos") && path.is_dir() => path,
                 (_, Some(path)) if cfg!(target_os = "linux") && !beside.is_dir() && path.is_dir() => path,
@@ -4869,7 +4869,7 @@ pub fn studio_data_root() -> Option<PathBuf> {
     #[cfg(windows)]
     {
         if let Some(root) = env::var_os("LOCALAPPDATA").or_else(|| env::var_os("APPDATA")) {
-            return Some(PathBuf::from(root).join("YuE2 Studio"));
+            return Some(PathBuf::from(root).join("Merlin Studio"));
         }
     }
 
@@ -6045,7 +6045,7 @@ async fn assistant_write_stream(
             outgoing = outgoing
                 .header(reqwest::header::AUTHORIZATION, format!("Bearer {key}"))
                 .header("HTTP-Referer", "https://github.com/timoncool/YuE2-Studio")
-                .header("X-Title", "YuE2 Studio");
+                .header("X-Title", "Merlin Studio");
         }
 
         // Until the first byte the window can be closed as well: a model

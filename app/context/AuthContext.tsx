@@ -2,7 +2,7 @@ import React, { createContext, useCallback, useContext, useMemo, useState, React
 import { LOCAL_USER_ID } from '../services/nativeLibrary';
 
 /**
- * YuE2 Studio is a single-user desktop application: the library, the
+ * Merlin Studio is a single-user desktop application: the library, the
  * media files and the model weights all live on this machine. There is no
  * account service, so this context only carries a display name for the shell.
  * It performs no network calls — the previous ACE implementation asked a Node
